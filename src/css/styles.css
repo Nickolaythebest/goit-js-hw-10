@@ -40,7 +40,7 @@
   letter-spacing: 0.04em;
   color: #2e2f42;
 }
-input{
+#datetime-picker {
   width: 272px;
   height: 40px;
   margin-right: 8px;
@@ -89,4 +89,48 @@ button:focus {
 button:disabled {
   background-color: #cfcfcf;
   color: #989898;
+}
+.input-label {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  text-align: start;
+  width: 360px;
+}
+
+.input-label input {
+  margin-top: 5px; /* Додає невеликий відступ між текстом і полем */
+  padding: 8px;
+  font-size: 14px;
+  width: 342px;
+  height: 40px;
+}
+fieldset {
+  width: 336px;
+  height: 64px;
+  display: flex;
+  text-align: start;
+  justify-content: space-around;
+}
+.radioLabel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+}
+.buttonForm {
+  width: 360px;
+  height: 40px;
+}
+.form {
+  display: flex;
+  text-align: start;
+  flex-direction: column;
+  gap: 24px;
 }
