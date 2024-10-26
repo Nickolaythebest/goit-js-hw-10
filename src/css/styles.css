@@ -16,3 +16,77 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+.timer {
+  display: flex;
+  justify-content: start;
+  gap: 24px;
+  text-align: center;
+  padding-left: 215px;
+}
+.label {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.value {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+input{
+  width: 272px;
+  height: 40px;
+  margin-right: 8px;
+  border-radius: 4px;
+  border-color: #808080;
+  margin-bottom: 32px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+input:hover {
+  border-color: #000000;
+}
+input:active{
+  border-color: #4e75ff;
+  color: #000000;
+}
+input:disabled {
+  border-color: #808080;
+  color: #808080;
+  background-color: #FAFAFA;
+}
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  background-color: #4e75ff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+button:hover {
+  background-color: #6c8cff;
+}
+button:focus {
+  background-color: #6c8cff;
+}
+button:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+}
