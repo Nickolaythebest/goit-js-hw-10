@@ -18,7 +18,7 @@ const refs = {
   minutes: document.querySelector("[data-minutes]"),
   seconds: document.querySelector("[data-seconds]"),
 };
-
+refs.startBtn.disabled = true;
 const options = {
   enableTime: true,
   time_24hr: true,
@@ -52,6 +52,7 @@ function startTimer(){
     if (deltaTime <= 0) {
       clearInterval(timerid);
       updateTimerDisplay(0, 0, 0, 0);
+      refs.dateTimePicker.disabled = false;
       return;
     } else {
       const { days, hours, minutes, seconds } = convertMs(deltaTime);
